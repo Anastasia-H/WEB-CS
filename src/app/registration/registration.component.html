@@ -1,0 +1,27 @@
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>NARRATOR</h1>
+                <h2>Articles, Stories & Inspiration</h2>
+            </div>
+            <a onclick="history.back();return false;">GO BACK</a>
+            <h3>Create an account</h3>
+        </div>
+    </header>
+    <form (submit)="register(username, firstName, lastName, email, password)">
+    <div class="main">
+        <input type="text" class="font" placeholder="First name" name="fname" id="fname" required #firstName/>
+        <input type="text" class="font" placeholder="Last name" name="lname" id="lname" required #lastName/>
+        <input type="text" class="font" placeholder="Username" name="username" id="username" required #username/>
+        <input type="email" class="font" placeholder="Email" name="email" id="email" required #email/>
+        <input type="password" class="font" placeholder="Password" name="psw" id="psw" autocomplete="off" required #password/>
+        <div class="inline">
+            <p>Already have an account?</p>
+            <a onclick = 'location.href="/login"'>Sign in</a>
+        </div>
+        <button type="submit" class="font">Sign Up</button>
+    </div>
+      </form>
+</body>

@@ -1,0 +1,54 @@
+<body>
+<header>
+    <nav>
+        <div class="area">
+            <a onclick = 'location.href="/home"' class="homebtn">Home</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a onclick = 'location.href="/blog"'>Blog</a></li>
+                <li><a onclick = 'location.href="/profile"' class="active">Profile</a></li>
+                <!--            <li><a href="sign-up.html">Sign Up</a></li>-->
+<!--                <li><a onclick = 'location.href="/login"'>Sign In</a></li>-->
+                <li><a onclick = 'location.href="/about"'>About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="logo">
+        <h1>NARRATOR</h1>
+        <h2>Articles, Stories & Inspiration</h2>
+    </div>
+    <div class="blackline"></div>
+    <div class="block_avatar_info">
+<!--        <img src="../resources/images/img3.jpg" class="avatar"/>-->
+        <div class="info">
+            <div class="info_name">{{firstName}} {{lastName}}</div>
+            <div class="info_text">Username: {{username}}</div>
+            <div class="info_text">Email: {{email}}</div>
+        </div>
+    </div>
+    <div class="blackline"></div>
+    <div class="main_body_title">
+<!--        <div class="title_profile">My articles</div>-->
+        <button class="button" onclick="location.href='article/create'">Create article</button>
+    </div>
+<!--    <div class="main-container clearfix">-->
+<!--        <div class="article-list">-->
+<!--            <div class="article">-->
+<!--&lt;!&ndash;                <img src="../resources/images/img2.JPG" class="article-img">&ndash;&gt;-->
+<!--                <div class="article-preview">-->
+<!--&lt;!&ndash;                    <h1><a href="article.html">Article #2</a></h1>&ndash;&gt;-->
+<!--                    <p>Author: Bill Clinton, Published: Yesterday</p>-->
+<!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+<!--                    <a onclick = 'location.href="/article"' class="preview-btn view-article">View article</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="blackline"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+</main>
+</body>

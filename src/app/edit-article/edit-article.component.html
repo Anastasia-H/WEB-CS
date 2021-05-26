@@ -1,0 +1,26 @@
+<body>
+    <header>
+        <nav>
+            <div class="area">
+<!--                <div class="homebtn">-->
+                <div class="logo white_text">
+                    <h1>NARRATOR</h1>
+                    <h2>Articles, Stories & Inspiration</h2>
+                </div>
+<!--            </div>-->
+                <ul>
+                    <li><a class="white_text" href="#" onclick="history.back();return false;">GO BACK</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h3>Create an article</h3>
+    </header>
+    <form (submit)="editArticle(title, text)">
+    <main>
+        <input type="text" class="font" placeholder="Title" name="title" id="title" required #title>
+        <textarea id='text' name="text" class="font" placeholder="Text" rows="100" cols="1" required #text></textarea>
+      <div class="inline"></div>
+        <button type="submit" class="font" >Edit article</button>
+    </main>
+      </form>
+</body>

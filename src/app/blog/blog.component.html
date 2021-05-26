@@ -1,0 +1,47 @@
+<body>
+  <header>
+      <nav>
+          <div class="area">
+              <a onclick = 'location.href="/home"' class="homebtn">Home</a>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                  <i class="fa fa-bars"></i>
+              </label>
+              <ul>
+                  <li><a onclick = 'location.href="/blog"'>Blog</a></li>
+              <li><a (click)="getUserId()">Profile</a></li>
+              <!--            <li><a href="sign-up.html">Sign Up</a></li>-->
+  <!--            <li><a onclick = 'location.href="/login"'>Sign In</a></li>-->
+              <li><a onclick = 'location.href="/about"'>About</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+  <main>
+  <!--    <div class="logo">-->
+  <!--        <h1>NARRATOR</h1>-->
+  <!--        <h2>Articles, Stories & Inspiration</h2>-->
+  <!--    </div>-->
+      <h3>My blog</h3>
+      <div class="main-container clearfix">
+          <div class="article-list"  *ngFor="let article of articles">
+              <div class="article">
+  <!--                <img src="../resources/images/img1.jpg" class="article-img">-->
+                  <div class="article-preview">
+                      <h1><a><b>Article {{article['article_ID']}}: {{article['title']}}</b></a></h1>
+  <!--                    <p>Author: Bill Clinton, Published: Yesterday</p>-->
+                      <p class="preview-text">{{article['text']}}</p>
+  <!--                    <a routerLink="['/article', article[article_ID]]"  class="preview-btn view-article">View article</a>-->
+                      <a (click)="getArticleId(article['article_ID'])"  class="preview-btn view-article">View article</a>
+                      <a (click)="getArticleId_edit(article['article_ID'])"  class="preview-btn view-article">Edit article</a>
+                      <a (click)="getArticleId_delete(article['article_ID'])"  class="preview-btn view-article">Delete article</a>
+  <!--                onclick = 'location.href="/article/{{article[article_ID]}}"'-->
+  <!--                  routerLink="['/article/', article[article_ID]]"-->
+                    <router-outlet></router-outlet>
+              </div>
+              <div class="blackline"></div>
+          </div>
+              </div>
+      </div>
+  </main>
+</body>
