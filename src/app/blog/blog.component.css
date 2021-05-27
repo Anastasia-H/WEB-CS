@@ -176,13 +176,13 @@ h3{
     cursor: pointer;
 }
 .main-container .article-list .article .article-preview{
-    width: 70%;
+    width: 80%;
     padding: 10px 20px;
     float: left;
 }
 .preview-text{
     /*white-space: nowrap;*/
-    height: 80px;
+    height: 70px;
     overflow: hidden;
     width: 100%;
     /*position: relative;*/
